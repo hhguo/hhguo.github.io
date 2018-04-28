@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://no">
-  <title>hhguo&#39;s blog</title>
+  <title>Tacotron | hhguo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="tacotron 代码解读源码出处：https://github.com/Kyubyong/tacotron 数据处理文本输入：源代码中只处理‘EG abcdefghijklmnopqrstuvwxyz’这些字符，其中E为empty，G为ignore。在模型中会对这些字符进行onehot编码。 音频参数：用librosa工具提取了幅度谱和梅尔谱这两种参数。 模型结构首先获取输入和输出数据，然后将输">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hhguo&#39;s blog">
+<meta property="og:title" content="Tacotron">
 <meta property="og:url" content="http://no/2018/04/28/TacotronCodeReading/index.html">
 <meta property="og:site_name" content="hhguo&#39;s blog">
 <meta property="og:description" content="tacotron 代码解读源码出处：https://github.com/Kyubyong/tacotron 数据处理文本输入：源代码中只处理‘EG abcdefghijklmnopqrstuvwxyz’这些字符，其中E为empty，G为ignore。在模型中会对这些字符进行onehot编码。 音频参数：用librosa工具提取了幅度谱和梅尔谱这两种参数。 模型结构首先获取输入和输出数据，然后将输">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-28T06:40:39.000Z">
+<meta property="og:updated_time" content="2018-04-28T07:48:44.268Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hhguo&#39;s blog">
+<meta name="twitter:title" content="Tacotron">
 <meta name="twitter:description" content="tacotron 代码解读源码出处：https://github.com/Kyubyong/tacotron 数据处理文本输入：源代码中只处理‘EG abcdefghijklmnopqrstuvwxyz’这些字符，其中E为empty，G为ignore。在模型中会对这些字符进行onehot编码。 音频参数：用librosa工具提取了幅度谱和梅尔谱这两种参数。 模型结构首先获取输入和输出数据，然后将输">
   
     <link rel="alternative" href="/atom.xml" title="hhguo&#39;s blog" type="application/atom+xml">
@@ -156,6 +156,21 @@
           <div id="js-content" class="content-ll">
             <article id="post-TacotronCodeReading" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Tacotron
+    </h1>
+  
+
+        
+        <a href="/2018/04/28/TacotronCodeReading/" class="archive-article-date">
+  	<time datetime="2018-04-28T07:48:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-28</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
