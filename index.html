@@ -152,6 +152,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ICASSP2018" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="FFTNET-A-REAL-TIME-SPEAKER-DEPENDENT-NEURAL-VOCODER"><a href="#FFTNET-A-REAL-TIME-SPEAKER-DEPENDENT-NEURAL-VOCODER" class="headerlink" title="FFTNET:A REAL-TIME SPEAKER-DEPENDENT NEURAL VOCODER"></a>FFTNET:A REAL-TIME SPEAKER-DEPENDENT NEURAL VOCODER</h3><p>FFTNet 是在Wavenet上做的变体，主要思想是把FFT中用到的碟形变换代替扩展卷积网络，具体原理可见下图，通过这种方法降低网络层数，加快模型解码，但效果没有Wavenet好。同时该文章讲述了一些训练上的技巧。</p>
+<ol>
+<li>Zero padding，就是训练过程中补零</li>
+<li>Conditional sampling, unvoiced段中，采样值按照后验概率随机选取，voiced段中，softmax前一层的值使用logits函数进行归一化，然后乘以一个固定系数c &gt; 1， 再通过softmax获得后验概率。</li>
+<li>Injected noise， 为了增加模型的鲁棒性，训练过程中给数据增加随机噪声。</li>
+<li>Post-synthesis denoising, 合成后降噪处理。
+</li>
+</ol>
+<h3 id="A-COMPARISON-OF-RECENT-WAVEFORM-GENERATION-AND-ACOUSTIC-MODELING-METHODS-FOR-NEURAL-NETWORK-BASED-SPEECH-SYNTHESIS-推荐"><a href="#A-COMPARISON-OF-RECENT-WAVEFORM-GENERATION-AND-ACOUSTIC-MODELING-METHODS-FOR-NEURAL-NETWORK-BASED-SPEECH-SYNTHESIS-推荐" class="headerlink" title="A COMPARISON OF RECENT WAVEFORM GENERATION AND ACOUSTIC MODELING METHODS FOR NEURAL-NETWORK-BASED SPEECH SYNTHESIS (推荐)"></a>A COMPARISON OF RECENT WAVEFORM GENERATION AND ACOUSTIC MODELING METHODS FOR NEURAL-NETWORK-BASED SPEECH SYNTHESIS (推荐)</h3><p>这篇论文对比了几种主流的基于神经网络的语音合成算法，从声学模型到声码器，并进行了一些实验，对工程的尝试有很好的借鉴意义，可以看一看。最后的结论是自回归的SAR模型比常规RNN效果好很多。</p>
+<h3 id="ON-THE-ANALYSIS-OF-TRAINING-DATA-FOR-WAVENET-BASED-SPEECH-SYNTHESIS"><a href="#ON-THE-ANALYSIS-OF-TRAINING-DATA-FOR-WAVENET-BASED-SPEECH-SYNTHESIS" class="headerlink" title="ON THE ANALYSIS OF TRAINING DATA FOR WAVENET-BASED SPEECH SYNTHESIS"></a>ON THE ANALYSIS OF TRAINING DATA FOR WAVENET-BASED SPEECH SYNTHESIS</h3><p>研究数据对Wavenet作为声学模型建模的影响。输入特征有音素（包括上下文）、LF0、UV、采样点在音素中的位置信息。同时作者尝试了韵律信息，但对音质没啥影响。在研究Wavenet模型鲁棒性的过程中，发现如下几个特点：</p>
+<ol>
+<li>对phonetic Segmentation增加10%的噪声并不明显影响模型生成的语音质量。另一方面，再高一点的噪声，就有明显影响了。</li>
+<li>如果音素标注有误，会有明显的影响。</li>
+<li>数据量至少得几个小时（2000句以上），越大区分度越小。</li>
+</ol>
+<h3 id="ON-THE-USE-OF-WAVENET-AS-A-STATISTICAL-VOCODER"><a href="#ON-THE-USE-OF-WAVENET-AS-A-STATISTICAL-VOCODER" class="headerlink" title="ON THE USE OF WAVENET AS A STATISTICAL VOCODER"></a>ON THE USE OF WAVENET AS A STATISTICAL VOCODER</h3><p>分析Wavenet作为vocoder建模，各个因素对其的影响。</p>
+<h3 id="ON-USING-BACK-PROPAGATION-FOR-SPEECH-TEXTURE-GENERATION-AND-VOICE-CONVERSION"><a href="#ON-USING-BACK-PROPAGATION-FOR-SPEECH-TEXTURE-GENERATION-AND-VOICE-CONVERSION" class="headerlink" title="ON USING BACK PROPAGATION FOR SPEECH TEXTURE GENERATION AND VOICE CONVERSION"></a>ON USING BACK PROPAGATION FOR SPEECH TEXTURE GENERATION AND VOICE CONVERSION</h3><p>意图用CTC语音识别提取语音纹理特征，然后用在语音转换等领域。文中指出随着层数的加深，说话人区分性越来越低，语音的纹理特征逐渐显现出来。也就是说前面几层靠近风格，后几层靠近纹理。<br>该文章从理论上证明了这点，但没有具体实现，个人仍没有完全明白其中意图，但感觉是摆脱i-vector的一个好方法。</p>
+<h3 id="LANGUAGE-TRANSFER-OF-AUDIO-WORD2VEC-LEARNING-AUDIO-SEGMENT-REPRESENTATIONS-WITHOUT-TARGET-LANGUAGE-DATA"><a href="#LANGUAGE-TRANSFER-OF-AUDIO-WORD2VEC-LEARNING-AUDIO-SEGMENT-REPRESENTATIONS-WITHOUT-TARGET-LANGUAGE-DATA" class="headerlink" title="LANGUAGE TRANSFER OF AUDIO WORD2VEC: LEARNING AUDIO SEGMENT REPRESENTATIONS WITHOUT TARGET LANGUAGE DATA"></a>LANGUAGE TRANSFER OF AUDIO WORD2VEC: LEARNING AUDIO SEGMENT REPRESENTATIONS WITHOUT TARGET LANGUAGE DATA</h3><p>使用序列自编码器（seq-seq autoencoder, SA）来构建Audio Word2Vec模型。将一个音频片段压缩成一个向量。可以用一个大语料库语种数据训练模型，然后适用于其他语言中（finetune）。本文主要针对了STD任务。</p>
+<h3 id="CYBORGSPEECH-DEEP-MULTILINGUAL-SPEECH-SYNTHESIS-FOR-GENERATING-SEGMENTAL-FOREIGN-ACCENT-WITH-NATURAL-PROSODY"><a href="#CYBORGSPEECH-DEEP-MULTILINGUAL-SPEECH-SYNTHESIS-FOR-GENERATING-SEGMENTAL-FOREIGN-ACCENT-WITH-NATURAL-PROSODY" class="headerlink" title="CYBORGSPEECH: DEEP MULTILINGUAL SPEECH SYNTHESIS FOR GENERATING SEGMENTAL FOREIGN ACCENT WITH NATURAL PROSODY"></a>CYBORGSPEECH: DEEP MULTILINGUAL SPEECH SYNTHESIS FOR GENERATING SEGMENTAL FOREIGN ACCENT WITH NATURAL PROSODY</h3><p>用时长和基频信息在多语种模型上合成外语口音，这样就可以合成带有英语口音的日语。</p>
+<h3 id="DEEP-FEED-FORWARD-SEQUENTIAL-MEMORY-NETWORKS-FOR-SPEECH-SYNTHESIS"><a href="#DEEP-FEED-FORWARD-SEQUENTIAL-MEMORY-NETWORKS-FOR-SPEECH-SYNTHESIS" class="headerlink" title="DEEP FEED-FORWARD SEQUENTIAL MEMORY NETWORKS FOR SPEECH SYNTHESIS"></a>DEEP FEED-FORWARD SEQUENTIAL MEMORY NETWORKS FOR SPEECH SYNTHESIS</h3><p>用FSMN对声学模型建模。FSMN (feed-forward sequencial memory) 具备很高的解码性能，而且其结构的memory模块多变，可以进行各种拓展，比如点乘，矩阵乘法，attention-based等方法。本文中使用FSMN已经略微超过了BLSTM效果，且性能提升至少一倍。是一个可以考虑商业化应用的算法。</p>
+<h3 id="SPEECH-WAVEFORM-SYNTHESIS-FROM-MFCC-SEQUENCES-WITH-GENERATIVE-ADVERSARIAL-NETWORKS"><a href="#SPEECH-WAVEFORM-SYNTHESIS-FROM-MFCC-SEQUENCES-WITH-GENERATIVE-ADVERSARIAL-NETWORKS" class="headerlink" title="SPEECH WAVEFORM SYNTHESIS FROM MFCC SEQUENCES WITH GENERATIVE ADVERSARIAL NETWORKS"></a>SPEECH WAVEFORM SYNTHESIS FROM MFCC SEQUENCES WITH GENERATIVE ADVERSARIAL NETWORKS</h3><p>信号方面的东西不是很懂，内容比较扎实，没有找到样例，值得听一听</p>
+<ol>
+<li>使用自回归模型从MFCC参数中预测F0, UV信息。将F0作为分类任务，分成了255个类，unvoiced 也作为一个类。</li>
+<li>建模从MFCC重构谱包络</li>
+<li>建模预测激励脉冲</li>
+<li>用GAN增加高频随机噪声</li>
+</ol>
+<h3 id="AN-INVESTIGATION-OF-SUBBAND-WAVENET-VOCODER-COVERING-ENTIRE-AUDIBLE-FREQUENCY-RANGE-WITH-LIMITED-ACOUSTIC-FEATURES"><a href="#AN-INVESTIGATION-OF-SUBBAND-WAVENET-VOCODER-COVERING-ENTIRE-AUDIBLE-FREQUENCY-RANGE-WITH-LIMITED-ACOUSTIC-FEATURES" class="headerlink" title="AN INVESTIGATION OF SUBBAND WAVENET VOCODER COVERING ENTIRE AUDIBLE FREQUENCY RANGE WITH LIMITED ACOUSTIC FEATURES"></a>AN INVESTIGATION OF SUBBAND WAVENET VOCODER COVERING ENTIRE AUDIBLE FREQUENCY RANGE WITH LIMITED ACOUSTIC FEATURES</h3><p>把语音切分成不同频带，每个频带单独建模，然后再还原到一起。合成和切分使用 Overlapped SSB synthesis filterbank 和 Overlapped SSB analysis filterbank。但具体实现原理不是很清楚。通过这种方法，我们可以满足在消费级显卡上进行48k语音建模。而且最终48khz的模型效果最佳，优于Straight的表现。<br></p>
+<h3 id="ADAPTATION-OF-AN-EXPRESSIVE-SINGLE-SPEAKER-DEEP-NEURAL-NETWORK-SPEECH-SYNTHESIS-SYSTEM"><a href="#ADAPTATION-OF-AN-EXPRESSIVE-SINGLE-SPEAKER-DEEP-NEURAL-NETWORK-SPEECH-SYNTHESIS-SYSTEM" class="headerlink" title="ADAPTATION OF AN EXPRESSIVE SINGLE SPEAKER DEEP NEURAL NETWORK SPEECH SYNTHESIS SYSTEM"></a>ADAPTATION OF AN EXPRESSIVE SINGLE SPEAKER DEEP NEURAL NETWORK SPEECH SYNTHESIS SYSTEM</h3><p>本文在多情感多说话人建模上提出了一种新的模型结构，即如下图所示，在LHUC的结构上进行了拓展，不再是 点乘一个系数，而是扩大参数量，训练新的权重。该部分权重称之为ESN。实验证明该建模效果要优于LHUC和ont-hot vector。<br>在该模型基础上适应新说话人时，我们可以继续沿用该方法，添加HLA到模型中。<br></p>
+<h3 id="FEATURE-BASED-ADAPTATION-FOR-SPEAKING-STYLE-SYNTHESIS"><a href="#FEATURE-BASED-ADAPTATION-FOR-SPEAKING-STYLE-SYNTHESIS" class="headerlink" title="FEATURE BASED ADAPTATION FOR SPEAKING STYLE SYNTHESIS"></a>FEATURE BASED ADAPTATION FOR SPEAKING STYLE SYNTHESIS</h3><p>本文介绍了一种adapation的新思路，和两种其中用到的特征。传统的自适应finetune模型的时候，通常固定前几层的参数，retrain后几层。本文在finetune的时候会把关于style的特征加到模型中进行训练。特征有两种，一种是bottleneck feature，另一种是residual feature。<br>bottleneck feature就是直接用目标说话人数据训练声学模型，然后模型中某一层设置为bottleneck层。这一层取出来的向量就是bottleneck feature。<br>residual feature 就是用原数据集训练声学模型，目标数据在这个模型上进行解码，解码得到的参数和真实输出相减获得偏移量，用这个偏移量再去训练一个模型，最后这个模型解码得到的结果就是residual feature。<br></p>
+<h3 id="TEXT-TO-SPEECH-SYNTHESIS-USING-STFT-SPECTRA-BASED-ON-LOW-MULTI-RESOLUTION-GENERATIVE-ADVERSARIAL-NETWORKS"><a href="#TEXT-TO-SPEECH-SYNTHESIS-USING-STFT-SPECTRA-BASED-ON-LOW-MULTI-RESOLUTION-GENERATIVE-ADVERSARIAL-NETWORKS" class="headerlink" title="TEXT-TO-SPEECH SYNTHESIS USING STFT SPECTRA BASED ON LOW-/MULTI-RESOLUTION GENERATIVE ADVERSARIAL NETWORKS"></a>TEXT-TO-SPEECH SYNTHESIS USING STFT SPECTRA BASED ON LOW-/MULTI-RESOLUTION GENERATIVE ADVERSARIAL NETWORKS</h3><p>本文针对直接用STFT幅度谱建模提出了 Low/multi-resolution GAN 的方法。GAN作为二分类问题，可以附加在传统的MSE后面。因为STFT幅度谱维度太高，分布过于复杂，所以引出了low-resolution GAN 的方法，即添加一个pooling层降低谱的维度。该pooling层也认定为一个滤波器组</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/03/ICASSP2018/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-TacotronCodeReading" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
