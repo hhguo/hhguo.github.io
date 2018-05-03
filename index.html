@@ -177,7 +177,7 @@
 <li>Zero padding，就是训练过程中补零</li>
 <li>Conditional sampling, unvoiced段中，采样值按照后验概率随机选取，voiced段中，softmax前一层的值使用logits函数进行归一化，然后乘以一个固定系数c &gt; 1， 再通过softmax获得后验概率。</li>
 <li>Injected noise， 为了增加模型的鲁棒性，训练过程中给数据增加随机噪声。</li>
-<li>Post-synthesis denoising, 合成后降噪处理。
+<li>Post-synthesis denoising, 合成后降噪处理。<img src="/2018/05/03/ICASSP2018/2018/05/03/ICASSP2018/FFTNET.jpg" title="FFTNET">
 </li>
 </ol>
 <h3 id="A-COMPARISON-OF-RECENT-WAVEFORM-GENERATION-AND-ACOUSTIC-MODELING-METHODS-FOR-NEURAL-NETWORK-BASED-SPEECH-SYNTHESIS-推荐"><a href="#A-COMPARISON-OF-RECENT-WAVEFORM-GENERATION-AND-ACOUSTIC-MODELING-METHODS-FOR-NEURAL-NETWORK-BASED-SPEECH-SYNTHESIS-推荐" class="headerlink" title="A COMPARISON OF RECENT WAVEFORM GENERATION AND ACOUSTIC MODELING METHODS FOR NEURAL-NETWORK-BASED SPEECH SYNTHESIS (推荐)"></a>A COMPARISON OF RECENT WAVEFORM GENERATION AND ACOUSTIC MODELING METHODS FOR NEURAL-NETWORK-BASED SPEECH SYNTHESIS (推荐)</h3><p>这篇论文对比了几种主流的基于神经网络的语音合成算法，从声学模型到声码器，并进行了一些实验，对工程的尝试有很好的借鉴意义，可以看一看。最后的结论是自回归的SAR模型比常规RNN效果好很多。</p>
