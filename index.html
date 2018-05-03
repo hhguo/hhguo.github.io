@@ -159,13 +159,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/28/ICASSP2018/">ICASSP2018合成部分论文总结</a>
+      <a class="article-title" href="/2018/05/03/ICASSP2018/">ICASSP2018合成部分论文总结</a>
     </h1>
   
 
         
-        <a href="/2018/04/28/ICASSP2018/" class="archive-article-date">
-  	<time datetime="2018-04-28T07:48:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-28</time>
+        <a href="/2018/05/03/ICASSP2018/" class="archive-article-date">
+  	<time datetime="2018-05-03T07:48:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-03</time>
 </a>
         
       </header>
@@ -199,9 +199,9 @@
 <li>建模预测激励脉冲</li>
 <li>用GAN增加高频随机噪声</li>
 </ol>
-<h3 id="AN-INVESTIGATION-OF-SUBBAND-WAVENET-VOCODER-COVERING-ENTIRE-AUDIBLE-FREQUENCY-RANGE-WITH-LIMITED-ACOUSTIC-FEATURES"><a href="#AN-INVESTIGATION-OF-SUBBAND-WAVENET-VOCODER-COVERING-ENTIRE-AUDIBLE-FREQUENCY-RANGE-WITH-LIMITED-ACOUSTIC-FEATURES" class="headerlink" title="AN INVESTIGATION OF SUBBAND WAVENET VOCODER COVERING ENTIRE AUDIBLE FREQUENCY RANGE WITH LIMITED ACOUSTIC FEATURES"></a>AN INVESTIGATION OF SUBBAND WAVENET VOCODER COVERING ENTIRE AUDIBLE FREQUENCY RANGE WITH LIMITED ACOUSTIC FEATURES</h3><p>把语音切分成不同频带，每个频带单独建模，然后再还原到一起。合成和切分使用 Overlapped SSB synthesis filterbank 和 Overlapped SSB analysis filterbank。但具体实现原理不是很清楚。通过这种方法，我们可以满足在消费级显卡上进行48k语音建模。而且最终48khz的模型效果最佳，优于Straight的表现。<br></p>
-<h3 id="ADAPTATION-OF-AN-EXPRESSIVE-SINGLE-SPEAKER-DEEP-NEURAL-NETWORK-SPEECH-SYNTHESIS-SYSTEM"><a href="#ADAPTATION-OF-AN-EXPRESSIVE-SINGLE-SPEAKER-DEEP-NEURAL-NETWORK-SPEECH-SYNTHESIS-SYSTEM" class="headerlink" title="ADAPTATION OF AN EXPRESSIVE SINGLE SPEAKER DEEP NEURAL NETWORK SPEECH SYNTHESIS SYSTEM"></a>ADAPTATION OF AN EXPRESSIVE SINGLE SPEAKER DEEP NEURAL NETWORK SPEECH SYNTHESIS SYSTEM</h3><p>本文在多情感多说话人建模上提出了一种新的模型结构，即如下图所示，在LHUC的结构上进行了拓展，不再是 点乘一个系数，而是扩大参数量，训练新的权重。该部分权重称之为ESN。实验证明该建模效果要优于LHUC和ont-hot vector。<br>在该模型基础上适应新说话人时，我们可以继续沿用该方法，添加HLA到模型中。<br></p>
-<h3 id="FEATURE-BASED-ADAPTATION-FOR-SPEAKING-STYLE-SYNTHESIS"><a href="#FEATURE-BASED-ADAPTATION-FOR-SPEAKING-STYLE-SYNTHESIS" class="headerlink" title="FEATURE BASED ADAPTATION FOR SPEAKING STYLE SYNTHESIS"></a>FEATURE BASED ADAPTATION FOR SPEAKING STYLE SYNTHESIS</h3><p>本文介绍了一种adapation的新思路，和两种其中用到的特征。传统的自适应finetune模型的时候，通常固定前几层的参数，retrain后几层。本文在finetune的时候会把关于style的特征加到模型中进行训练。特征有两种，一种是bottleneck feature，另一种是residual feature。<br>bottleneck feature就是直接用目标说话人数据训练声学模型，然后模型中某一层设置为bottleneck层。这一层取出来的向量就是bottleneck feature。<br>residual feature 就是用原数据集训练声学模型，目标数据在这个模型上进行解码，解码得到的参数和真实输出相减获得偏移量，用这个偏移量再去训练一个模型，最后这个模型解码得到的结果就是residual feature。<br></p>
+<h3 id="AN-INVESTIGATION-OF-SUBBAND-WAVENET-VOCODER-COVERING-ENTIRE-AUDIBLE-FREQUENCY-RANGE-WITH-LIMITED-ACOUSTIC-FEATURES"><a href="#AN-INVESTIGATION-OF-SUBBAND-WAVENET-VOCODER-COVERING-ENTIRE-AUDIBLE-FREQUENCY-RANGE-WITH-LIMITED-ACOUSTIC-FEATURES" class="headerlink" title="AN INVESTIGATION OF SUBBAND WAVENET VOCODER COVERING ENTIRE AUDIBLE FREQUENCY RANGE WITH LIMITED ACOUSTIC FEATURES"></a>AN INVESTIGATION OF SUBBAND WAVENET VOCODER COVERING ENTIRE AUDIBLE FREQUENCY RANGE WITH LIMITED ACOUSTIC FEATURES</h3><p>把语音切分成不同频带，每个频带单独建模，然后再还原到一起。合成和切分使用 Overlapped SSB synthesis filterbank 和 Overlapped SSB analysis filterbank。但具体实现原理不是很清楚。通过这种方法，我们可以满足在消费级显卡上进行48k语音建模。而且最终48khz的模型效果最佳，优于Straight的表现。<br><img src="/2018/05/03/ICASSP2018/2018/05/03/ICASSP2018/subband.png" title="SUBBAND"></p>
+<h3 id="ADAPTATION-OF-AN-EXPRESSIVE-SINGLE-SPEAKER-DEEP-NEURAL-NETWORK-SPEECH-SYNTHESIS-SYSTEM"><a href="#ADAPTATION-OF-AN-EXPRESSIVE-SINGLE-SPEAKER-DEEP-NEURAL-NETWORK-SPEECH-SYNTHESIS-SYSTEM" class="headerlink" title="ADAPTATION OF AN EXPRESSIVE SINGLE SPEAKER DEEP NEURAL NETWORK SPEECH SYNTHESIS SYSTEM"></a>ADAPTATION OF AN EXPRESSIVE SINGLE SPEAKER DEEP NEURAL NETWORK SPEECH SYNTHESIS SYSTEM</h3><p>本文在多情感多说话人建模上提出了一种新的模型结构，即如下图所示，在LHUC的结构上进行了拓展，不再是 点乘一个系数，而是扩大参数量，训练新的权重。该部分权重称之为ESN。实验证明该建模效果要优于LHUC和ont-hot vector。<br>在该模型基础上适应新说话人时，我们可以继续沿用该方法，添加HLA到模型中。<br><img src="/2018/05/03/ICASSP2018/2018/05/03/ICASSP2018/HLA.png" title="HLA"></p>
+<h3 id="FEATURE-BASED-ADAPTATION-FOR-SPEAKING-STYLE-SYNTHESIS"><a href="#FEATURE-BASED-ADAPTATION-FOR-SPEAKING-STYLE-SYNTHESIS" class="headerlink" title="FEATURE BASED ADAPTATION FOR SPEAKING STYLE SYNTHESIS"></a>FEATURE BASED ADAPTATION FOR SPEAKING STYLE SYNTHESIS</h3><p>本文介绍了一种adapation的新思路，和两种其中用到的特征。传统的自适应finetune模型的时候，通常固定前几层的参数，retrain后几层。本文在finetune的时候会把关于style的特征加到模型中进行训练。特征有两种，一种是bottleneck feature，另一种是residual feature。<br>bottleneck feature就是直接用目标说话人数据训练声学模型，然后模型中某一层设置为bottleneck层。这一层取出来的向量就是bottleneck feature。<br>residual feature 就是用原数据集训练声学模型，目标数据在这个模型上进行解码，解码得到的参数和真实输出相减获得偏移量，用这个偏移量再去训练一个模型，最后这个模型解码得到的结果就是residual feature。<br><img src="/2018/05/03/ICASSP2018/2018/05/03/ICASSP2018/feature.png" title="feature"></p>
 <h3 id="TEXT-TO-SPEECH-SYNTHESIS-USING-STFT-SPECTRA-BASED-ON-LOW-MULTI-RESOLUTION-GENERATIVE-ADVERSARIAL-NETWORKS"><a href="#TEXT-TO-SPEECH-SYNTHESIS-USING-STFT-SPECTRA-BASED-ON-LOW-MULTI-RESOLUTION-GENERATIVE-ADVERSARIAL-NETWORKS" class="headerlink" title="TEXT-TO-SPEECH SYNTHESIS USING STFT SPECTRA BASED ON LOW-/MULTI-RESOLUTION GENERATIVE ADVERSARIAL NETWORKS"></a>TEXT-TO-SPEECH SYNTHESIS USING STFT SPECTRA BASED ON LOW-/MULTI-RESOLUTION GENERATIVE ADVERSARIAL NETWORKS</h3><p>本文针对直接用STFT幅度谱建模提出了 Low/multi-resolution GAN 的方法。GAN作为二分类问题，可以附加在传统的MSE后面。因为STFT幅度谱维度太高，分布过于复杂，所以引出了low-resolution GAN 的方法，即添加一个pooling层降低谱的维度。该pooling层也认定为一个滤波器组</p>
 
       
@@ -215,7 +215,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/28/ICASSP2018/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/03/ICASSP2018/">展开全文 >></a>
         </p>
       
 
