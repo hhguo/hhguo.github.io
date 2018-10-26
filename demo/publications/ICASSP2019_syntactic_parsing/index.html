@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>EXPLOITING SYNTATIC FEATURES IN A PARSED TREE TO IMPROVE END-TO-END TTS SYNTHESIS</title>
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Audio samples from "Tacotron: Towards End-to-End Speech Synthesis"</h1>
+      </header>
+    </article>
+
+    <!-- <div><b>Paper:</b> <a href="https://www.baidu.com">arXiv</a> <a href="http://www.baidu.com">ICASSP 2019</a></div> -->
+    <div><b>Authors:</b> Haohan Guo, FK Soong, Lei He, Lei Xie</div>
+    <div><b>Abstract:</b> The state-of-the-art, end-to-end TTS training, which can predict speech directly from a given sequence of graphemes or phonemes,  has shown improved performance over the conventional TTS approach. However, its predicting capability is limited by the acoustic/phonetic coverage and the amount of the training data. The synthesized speech quality in its pronunciation, break and prosody, can still be further improved. We propose to enhance the TTS performance by exploiting the information embedded in a syntactically parsed tree which can capture the inter-phrase/word information encoded in a sentence. With words grouped in a multi-layered syntactic tree, we investigate two key linguistic features in such a structure, i.e., the phrase structure and the relations between adjacent words. Results of subjective assessment in quality test, measured on three test sentence sets, show that the proposed approach is effective to generalize the prediction capability of the end-to-end TTS and to improve the corresponding intelligibility, naturalness and prosody of the synthesized speech.</div>
+
+    <div>
+      <h3>Common test set</h3>
+      <table>
+        <tr><td class="transcript">“Although they expect higher data speeds eventually , IT managers don't know which technologies will deliver .”</td></tr>
+        <tr><td><audio controls><source src="demos/common_p_2.wav"></audio><audio controls><source src="demos/common_f1_2.wav"></audio><audio controls><source src="demos/common_f2_2.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“Mobile operators say that new network technologies will increase mobile bandwidth over two hundred times , pushing speeds from today's nine .”</td></tr>
+        <tr><td><audio controls><source src="demos/common_p_7.wav"></audio><audio controls><source src="demos/common_f1_7.wav"></audio><audio controls><source src="demos/common_f2_7.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“Servers are using six ninety four M and four twenty three M and I am afraid that this may not be related to the memory usage .
+”</td></tr>
+        <tr><td><audio controls><source src="demos/common_p_13.wav"></audio><audio controls><source src="demos/common_f1_13.wav"></audio><audio controls><source src="demos/common_f2_13.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“At a meeting of Microsofts top one hundred and fifty executives , Nadella tried to get everyone back on course .”</td></tr>
+        <tr><td><audio controls><source src="demos/common_p_24.wav"></audio><audio controls><source src="demos/common_f1_24.wav"></audio><audio controls><source src="demos/common_f2_24.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“Twitter , Amazon , Google , and others have all removed their Apple Watch apps .
+”</td></tr>
+        <tr><td><audio controls><source src="demos/common_p_42.wav"></audio><audio controls><source src="demos/common_f1_42.wav"></audio><audio controls><source src="demos/common_f2_42.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“Brins resume , which was last updated more than twenty years ago , is still available online .”</td></tr>
+        <tr><td><audio controls><source src="demos/common_p_47.wav"></audio><audio controls><source src="demos/common_f1_47.wav"></audio><audio controls><source src="demos/common_f2_47.wav"></audio></td></tr>
+      </table>
+    </div>
+	
+	<div>
+      <h3>Complex test set</h3>
+      <table>
+        <tr><td class="transcript">“I think it is important for companies like ours to have a set of principles that governs some of the most important things like privacy and security and or immigration and take a stance .
+”</td></tr>
+        <tr><td><audio controls><source src="demos/complex_p_2.wav"></audio><audio controls><source src="demos/complex_f1_2.wav"></audio><audio controls><source src="demos/complex_f2_2.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“In addition , Microsoft also launched a new set of tools for developers who want to use its Visual Studio Code IDE for building models with CNTK , TensorFlow , Theano , Keras and Caffe two .
+”</td></tr>
+        <tr><td><audio controls><source src="demos/complex_p_4.wav"></audio><audio controls><source src="demos/complex_f1_4.wav"></audio><audio controls><source src="demos/complex_f2_4.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“But it will be the driver's responsibility to make sure that children under 14 do not ride in the front unless they are wearing a seat belt of some kind.
+”</td></tr>
+        <tr><td><audio controls><source src="demos/complex_p_6.wav"></audio><audio controls><source src="demos/complex_f1_6.wav"></audio><audio controls><source src="demos/complex_f2_6.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“They are trying to find out whether there is something about the way we teach language to children which in fact prevents children from learning sooner.
+”</td></tr>
+        <tr><td><audio controls><source src="demos/complex_p_9.wav"></audio><audio controls><source src="demos/complex_f1_9.wav"></audio><audio controls><source src="demos/complex_f2_9.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“Even the folk knowledge in social systems on which ordinary life is based in earning, spending, organizing, marrying, taking part in political activities, fighting and so on, is not very dissimilar from the more sophisticated images of the social system derived from the social sciences, even though it is built upon the very imperfect samples of personal experience.
+”</td></tr>
+        <tr><td><audio controls><source src="demos/complex_p_11.wav"></audio><audio controls><source src="demos/complex_f1_11.wav"></audio><audio controls><source src="demos/complex_f2_11.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“All the faith he had had had had no effect on the outcome of his life.”</td></tr>
+        <tr><td><audio controls><source src="demos/complex_p_15.wav"></audio><audio controls><source src="demos/complex_f1_15.wav"></audio><audio controls><source src="demos/complex_f2_15.wav"></audio></td></tr>
+      </table>
+    </div>
+	
+	<div>
+      <h3>Pathological test set</h3>
+      <table>
+        <tr><td class="transcript">“zero zero four cd three oh seven zero zero zero zero zero zero zero three zero zero zero zero zero zero zero one .
+”</td></tr>
+        <tr><td><audio controls><source src="demos/pathological_p_147.wav"></audio><audio controls><source src="demos/pathological_f1_147.wav"></audio><audio controls><source src="demos/pathological_f2_147.wav"></audio></td></tr>
+      </table>
+	  <table>
+        <tr><td class="transcript">“added dot-net framework install in script backslash backslash m b x hyphen t o p o c e n t r a l backslash clientsetup backslash v m c l i e n t s e t u p dot c m d comma to fix issue of running dot-net binaries on w two k .
+”</td></tr>
+        <tr><td><audio controls><source src="demos/pathological_p_272.wav"></audio><audio controls><source src="demos/pathological_f1_272.wav"></audio><audio controls><source src="demos/pathological_f2_272.wav"></audio></td></tr>
+      </table>
+    </div>
+
+  </body>
+</html>
