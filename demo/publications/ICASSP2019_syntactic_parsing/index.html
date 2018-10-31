@@ -15,10 +15,10 @@
     <div><b>Authors:</b> Haohan Guo, FK Soong, Lei He, Lei Xie</div>
     <div><b>Abstract:</b> The state-of-the-art, end-to-end TTS training, which can predict speech directly from a given sequence of graphemes or phonemes,  has shown improved performance over the conventional TTS approach. However, its predicting capability is limited by the acoustic/phonetic coverage and the amount of the training data. The synthesized speech quality in its pronunciation, break and prosody, can still be further improved. We propose to enhance the TTS performance by exploiting the information embedded in a syntactically parsed tree which can capture the inter-phrase/word information encoded in a sentence. With words grouped in a multi-layered syntactic tree, we investigate two key linguistic features in such a structure, i.e., the phrase structure and the relations between adjacent words. Results of subjective assessment in quality test, measured on three test sentence sets, show that the proposed approach is effective to generalize the prediction capability of the end-to-end TTS and to improve the corresponding intelligibility, naturalness and prosody of the synthesized speech.</div>
 	
-	<div>These samples are synthesized from Mel-spectrum by Griffin-Lim algorithm. We just need to pay attention to prosody because this work has no relation with speech quality basically. </div>
+	<div><p></p><font size="3" color="red">Note: These samples are synthesized from Mel-spectrum by Griffin-Lim algorithm. We just need to pay attention to prosody because this work has no relation with speech quality basically. </font></div>
 
     <div>
-      <h3>Common test set</h3>
+      <h3>Common test set (Left: baseline, Mid: phrase structure based features, Right: word relation based features)</h3>
       <table>
         <tr><td class="transcript">“Although they expect higher data speeds eventually , IT managers don't know which technologies will deliver .”</td></tr>
         <tr><td><audio controls><source src="demos/common_p_2.wav"></audio><audio controls><source src="demos/common_f1_2.wav"></audio><audio controls><source src="demos/common_f2_2.wav"></audio></td></tr>
@@ -48,7 +48,7 @@
     </div>
 	
 	<div>
-      <h3>Complex test set</h3>
+      <h3>Complex test set (Left: baseline, Mid: phrase structure based features, Right: word relation based features)</h3>
       <table>
         <tr><td class="transcript">“I think it is important for companies like ours to have a set of principles that governs some of the most important things like privacy and security and or immigration and take a stance .
 ”</td></tr>
@@ -81,7 +81,7 @@
     </div>
 	
 	<div>
-      <h3>Pathological test set</h3>
+      <h3>Pathological test set (Left: baseline, Mid: phrase structure based features, Right: word relation based features)</h3>
       <table>
         <tr><td class="transcript">“zero zero four cd three oh seven zero zero zero zero zero zero zero three zero zero zero zero zero zero zero one .
 ”</td></tr>
