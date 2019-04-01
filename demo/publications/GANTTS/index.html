@@ -15,8 +15,10 @@
     <div><b>Authors:</b> Haohan Guo, FK Soong, Lei He, Lei Xie</div>
     <div><b>Abstract:</b> End-to-end (e2e), autoregressive model-based TTS has shown significant performance improvements over the conventional one. However, the autoregressive module training is affected by the “exposure bias”, or the mismatch between the different distributions of real and predicted data. While real data is available in training, but in testing, only predicted data is available to feed the autoregressive module. By introducing both real and generated data sequences in training, we can alleviate the effects of the exposure bias. We propose to use Generative Adversarial Network (GAN) along with the key idea of “Professor Forcing” in e2e training. A discriminator in GAN is jointly trained to equalize the difference between real and predicted data. In AB subjective listening test, the results show that the new approach is preferred over the standard transfer learning with a CMOS improvement of 0.1. Sentence level intelligibility tests show significant improvement in a pathological test set. The GAN-trained new model is also more stable than the baseline to produce better alignments for the Tacotron output. </div>
 
+	<div><p></p><font size="3" color="blue">FROM LEFT TO RIGHT: TF(BASELINE), SS, TF-GAN, SS-GAN</font></div>
+	
     <div>
-      <h3>CMOS TEST (FROM LEGT TO RIGHT: TF(BASELINE), SS, TF-GAN, SS-GAN)<p></p></h3>
+      <h3>CMOS TEST<p></p></h3>
       <table>
 		<tr><td class="transcript">“The shelters are full , and the rents keep going up .”<p></p></td></tr>
         <tr><td><audio controls><source src="demos/020004_TF.wav"></audio><audio controls><source src="demos/020004_SS.wav"></audio><audio controls><source src="demos/020004_TFGAN.wav"></audio><audio controls><source src="demos/020004_SSGAN.wav"></audio><p></p></td></tr>
@@ -32,14 +34,12 @@
 	<div>
       <h3>INTELLIGIBILITY TEST<p></p></h3>
       <table>
-		<tr><td class="transcript">“added dot-net framework install in script backslash backslash m b x hyphen t o p o c e n t r a l backslash clientsetup backslash v m c l i e n t s e t u p dot c m d comma to fix issue of running dot-net binaries on w two k .”<p></p></td></tr>
-        <tr><td><audio controls><source src="demos/050273_TF.wav"></audio><audio controls><source src="demos/050273_SS.wav"></audio><audio controls><source src="demos/050273_TFGAN.wav"></audio><audio controls><source src="demos/050273_SSGAN.wav"></audio><p></p></td></tr>
-		<tr><td class="transcript">“windiff backslash backslash saeedn backslash exptsp backslash transmt backslash src backslash smtpsink backslash msgfilter backslash backslash saeedn backslash exptsp backslash transmt backslash src backslash smtpsink backslash IMFPostCat Thanks - Saeed Hey Matt , Any progress on this ?”<p></p></td></tr>
+		<tr><td class="transcript">“Failed zero point zero zero percent two zero zero two zero zero zero zero Internal , Exchange , Protocols , Exch fifty , BVT Protocols , Exch fifty , BVT_log , <font size="3" color="red">xml Error !”</font><p></p></td></tr>
+        <tr><td><audio controls><source src="demos/050253_TF.wav"></audio><audio controls><source src="demos/050253_SS.wav"></audio><audio controls><source src="demos/050253_TFGAN.wav"></audio><audio controls><source src="demos/050253_SSGAN.wav"></audio><p></p></td></tr>
+		<tr><td class="transcript">“windiff backslash backslash saeedn backslash exptsp backslash transmt backslash src backslash smtpsink backslash msgfilter backslash backslash saeedn backslash exptsp backslash transmt backslash src backslash smtpsink backslash IMFPostCat Thanks - Saeed Hey Matt , <font size="3" color="red">Any progress on this ?</font>”<p></p></td></tr>
         <tr><td><audio controls><source src="demos/050294_TF.wav"></audio><audio controls><source src="demos/050294_SS.wav"></audio><audio controls><source src="demos/050294_TFGAN.wav"></audio><audio controls><source src="demos/050294_SSGAN.wav"></audio><p></p></td></tr>
-		<tr><td class="transcript">“DUB - OWA - zero one JPN - OWA - zero one RED - OWA - zero one RED - OWA - zero two SIN - OWA - zero one SIN - OWA - zero two SYD - OWA - zero one SYD - OWA - zero two Corporate MSG Servers Server Name Exchange Version OS Version Able to Upgrade to WS two thousand and three ?”<p></p></td></tr>
+		<tr><td class="transcript">“DUB - OWA - zero one JPN - OWA - zero one RED - OWA - zero one RED - OWA - zero two SIN - OWA - zero one SIN - OWA - zero two SYD - OWA - zero one SYD - OWA - zero two Corporate MSG Servers Server Name Exchange Version OS <font size="3" color="red">Version Able to Upgrade to WS two thousand and three ?”</font><p></p></td></tr>
         <tr><td><audio controls><source src="demos/050225_TF.wav"></audio><audio controls><source src="demos/050225_SS.wav"></audio><audio controls><source src="demos/050225_TFGAN.wav"></audio><audio controls><source src="demos/050225_SSGAN.wav"></audio><p></p></td></tr>
-		<tr><td class="transcript">“h t t p colon slash slash c one six slash Specs two percent sign two zero Office percent sign two zero Specs dot aspx question mark RootFolder equal sign slash c one six slash Specs two ampersand View equal sign left brace three three eight eight eight BDC hyphen E zero CB hyphen four nine two eight hyphen AEB seven hyphen two six six zero seven D two eight zero zero nine F right brace .”<p></p></td></tr>
-        <tr><td><audio controls><source src="demos/050110_TF.wav"></audio><audio controls><source src="demos/050110_SS.wav"></audio><audio controls><source src="demos/050110_TFGAN.wav"></audio><audio controls><source src="demos/050110_SSGAN.wav"></audio><p></p></td></tr>
       </table>
     </div>
 
