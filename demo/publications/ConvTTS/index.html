@@ -14,37 +14,23 @@
 </style>
 
 <body>
-<h1>中文对话合成主观测听实验</h1>
-<div class="line">
-测试分为两个部分:<br>
-<br>
-在每一部分，首先，您将依次听到5段对话：客户(男)，客服(女). 针对每段中的每轮对话，请根据对话上下文对比<font color="#FF0000">标红部分(女生)</font>的韵律表现 (整体韵律是否更自然，是否更适合当前对话内容?), 然后做出您的选择。<br>
-<br>
-测试完成后，请点击<font color="#FF0000">“完成”</font>按钮提交您的结果.<br>
-</div>
-<br>
-<form method="POST" action="/send">
-请输入你的姓名---- <input type="text" name="name"/>
-<br>
-<br>
-<h2>Part 1 M1(left) vs M2(right)</h2>
-<br>
-<h2>对话 1</h2>
+<h1>Conversational TTS Samples</h1>
+<ul>
+	<li>M1: baseline model.<br> </li>
+	<li>M2: M1 plus auxiliary encoder.<br></li>
+	<li>M3: M2 plus conversational context encoder.<br></li>
+	<li>The red text parts are agent (female voice), the others are user (male voice).</li>
+</ul>
+<h2>Part 1: M1(left) vs M2(right)</h2>
+<h2>Dialog 1</h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>文本</th><th>音频</th></tr>
+    <tr><th>Transcript</th><th>Audio</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             <font color="#FF0000">您好，有什么可以帮您？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000100000.wav"></audio><audio controls><source src="sample/bert/06060000100000.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0201" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0201" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0201" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0201" value=0  />same
-            <input id="o5" type="radio" name="t1s0201" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0201" value=2  />better
-            <input id="o7" type="radio" name="t1s0201" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000100000.wav"></audio><audio controls><source src="sample/bert/06060000100000.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -53,14 +39,7 @@
             <font color="#FF0000">可以的。那么，您要去哪里旅行呢？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000100002.wav"></audio><audio controls><source src="sample/bert/06060000100002.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0202" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0202" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0202" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0202" value=0  />same
-            <input id="o5" type="radio" name="t1s0202" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0202" value=2  />better
-            <input id="o7" type="radio" name="t1s0202" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000100002.wav"></audio><audio controls><source src="sample/bert/06060000100002.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -69,14 +48,7 @@
             <font color="#FF0000">可以啊，嗯，您想去热带气候的地方，还是想去凉爽的地方？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000100004.wav"></audio><audio controls><source src="sample/bert/06060000100004.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0203" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0203" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0203" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0203" value=0  />same
-            <input id="o5" type="radio" name="t1s0203" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0203" value=2  />better
-            <input id="o7" type="radio" name="t1s0203" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000100004.wav"></audio><audio controls><source src="sample/bert/06060000100004.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -85,14 +57,7 @@
             <font color="#FF0000">好的，我给您一些小册子，您参考参考。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000100006.wav"></audio><audio controls><source src="sample/bert/06060000100006.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0204" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0204" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0204" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0204" value=0  />same
-            <input id="o5" type="radio" name="t1s0204" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0204" value=2  />better
-            <input id="o7" type="radio" name="t1s0204" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000100006.wav"></audio><audio controls><source src="sample/bert/06060000100006.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -101,14 +66,7 @@
             <font color="#FF0000">好的。另外，您这次旅行的预算多少？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000100008.wav"></audio><audio controls><source src="sample/bert/06060000100008.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0205" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0205" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0205" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0205" value=0  />same
-            <input id="o5" type="radio" name="t1s0205" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0205" value=2  />better
-            <input id="o7" type="radio" name="t1s0205" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000100008.wav"></audio><audio controls><source src="sample/bert/06060000100008.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -117,35 +75,21 @@
             <font color="#FF0000">好的。那您先选择目的地，缩小范围之后，我们将很乐意为您预订。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000100010.wav"></audio><audio controls><source src="sample/bert/06060000100010.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0206" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0206" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0206" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0206" value=0  />same
-            <input id="o5" type="radio" name="t1s0206" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0206" value=2  />better
-            <input id="o7" type="radio" name="t1s0206" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000100010.wav"></audio><audio controls><source src="sample/bert/06060000100010.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
 </table>
 
-<h2>对话 2</h2>
+<h2>Dialog 2</h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>文本</th><th>音频</th></tr>
+    <tr><th>Transcript</th><th>Audio</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             你好。我需要预订飞机票。<br>
             <font color="#FF0000">好的，我们可以立即预订您的行程。那，您要飞往哪个城市？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000200002.wav"></audio><audio controls><source src="sample/bert/06060000200002.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0301" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0301" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0301" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0301" value=0  />same
-            <input id="o5" type="radio" name="t1s0301" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0301" value=2  />better
-            <input id="o7" type="radio" name="t1s0301" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000200002.wav"></audio><audio controls><source src="sample/bert/06060000200002.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -154,14 +98,7 @@
             <font color="#FF0000">好。您希望预定几号的票？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000200004.wav"></audio><audio controls><source src="sample/bert/06060000200004.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0302" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0302" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0302" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0302" value=0  />same
-            <input id="o5" type="radio" name="t1s0302" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0302" value=2  />better
-            <input id="o7" type="radio" name="t1s0302" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000200004.wav"></audio><audio controls><source src="sample/bert/06060000200004.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -170,14 +107,7 @@
             <font color="#FF0000">稍等。嗯，好。您可以从洛杉矶国际机场或伯班克机场起飞，您选哪个？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000200006.wav"></audio><audio controls><source src="sample/bert/06060000200006.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0303" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0303" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0303" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0303" value=0  />same
-            <input id="o5" type="radio" name="t1s0303" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0303" value=2  />better
-            <input id="o7" type="radio" name="t1s0303" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000200006.wav"></audio><audio controls><source src="sample/bert/06060000200006.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -186,14 +116,7 @@
             <font color="#FF0000">好。您希望在一天中的哪个时间飞行？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000200008.wav"></audio><audio controls><source src="sample/bert/06060000200008.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0304" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0304" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0304" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0304" value=0  />same
-            <input id="o5" type="radio" name="t1s0304" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0304" value=2  />better
-            <input id="o7" type="radio" name="t1s0304" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000200008.wav"></audio><audio controls><source src="sample/bert/06060000200008.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -202,35 +125,21 @@
             <font color="#FF0000">好的，已经为您找到了廉价航班。我们已经把电子机票发到您的邮箱，请您查收。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000200010.wav"></audio><audio controls><source src="sample/bert/06060000200010.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0305" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0305" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0305" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0305" value=0  />same
-            <input id="o5" type="radio" name="t1s0305" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0305" value=2  />better
-            <input id="o7" type="radio" name="t1s0305" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000200010.wav"></audio><audio controls><source src="sample/bert/06060000200010.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
 </table>
 
-<h2>对话 3</h2>
+<h2>Dialog 3</h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>文本</th><th>音频</th></tr>
+    <tr><th>Transcript</th><th>Audio</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             嗨，你们这可以点酒水吗？<br>
             <font color="#FF0000">当然。本次航班，您可以选择酒吧饮品，咖啡，茶或软饮料。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000300002.wav"></audio><audio controls><source src="sample/bert/06060000300002.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0401" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0401" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0401" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0401" value=0  />same
-            <input id="o5" type="radio" name="t1s0401" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0401" value=2  />better
-            <input id="o7" type="radio" name="t1s0401" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000300002.wav"></audio><audio controls><source src="sample/bert/06060000300002.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -239,14 +148,7 @@
             <font color="#FF0000">我们的酒精饮料，每人五美元。其他的均为两美元，可免费续杯。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000300004.wav"></audio><audio controls><source src="sample/bert/06060000300004.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0402" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0402" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0402" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0402" value=0  />same
-            <input id="o5" type="radio" name="t1s0402" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0402" value=2  />better
-            <input id="o7" type="radio" name="t1s0402" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000300004.wav"></audio><audio controls><source src="sample/bert/06060000300004.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -255,14 +157,7 @@
             <font color="#FF0000">可以的。我们会先给您赠送一些小点心，然后您将在几个小时内享用晚餐。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000300006.wav"></audio><audio controls><source src="sample/bert/06060000300006.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0403" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0403" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0403" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0403" value=0  />same
-            <input id="o5" type="radio" name="t1s0403" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0403" value=2  />better
-            <input id="o7" type="radio" name="t1s0403" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000300006.wav"></audio><audio controls><source src="sample/bert/06060000300006.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -271,14 +166,7 @@
             <font color="#FF0000">我们供应鸡肉，鱼肉或牛肉盘。您可以随便选。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000300008.wav"></audio><audio controls><source src="sample/bert/06060000300008.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0404" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0404" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0404" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0404" value=0  />same
-            <input id="o5" type="radio" name="t1s0404" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0404" value=2  />better
-            <input id="o7" type="radio" name="t1s0404" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000300008.wav"></audio><audio controls><source src="sample/bert/06060000300008.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -287,35 +175,21 @@
             <font color="#FF0000">不好意思，先生，特殊饮食需求需要在起飞前提前预定的。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000300010.wav"></audio><audio controls><source src="sample/bert/06060000300010.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0405" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0405" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0405" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0405" value=0  />same
-            <input id="o5" type="radio" name="t1s0405" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0405" value=2  />better
-            <input id="o7" type="radio" name="t1s0405" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000300010.wav"></audio><audio controls><source src="sample/bert/06060000300010.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
 </table>
 
-<h2>对话 4</h2>
+<h2>Dialog 4</h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>文本</th><th>音频</th></tr>
+    <tr><th>Transcript</th><th>Audio</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             早上好。我想找一位房地产经纪人来帮我卖房子。<br>
             <font color="#FF0000">早上好。我很乐意为您提供帮助。那，您什么时候想卖掉您的房子？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000400002.wav"></audio><audio controls><source src="sample/bert/06060000400002.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0501" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0501" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0501" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0501" value=0  />same
-            <input id="o5" type="radio" name="t1s0501" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0501" value=2  />better
-            <input id="o7" type="radio" name="t1s0501" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000400002.wav"></audio><audio controls><source src="sample/bert/06060000400002.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -324,14 +198,7 @@
             <font color="#FF0000">好啊，您买房多久了呢？</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000400004.wav"></audio><audio controls><source src="sample/bert/06060000400004.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0502" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0502" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0502" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0502" value=0  />same
-            <input id="o5" type="radio" name="t1s0502" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0502" value=2  />better
-            <input id="o7" type="radio" name="t1s0502" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000400004.wav"></audio><audio controls><source src="sample/bert/06060000400004.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -340,14 +207,7 @@
             <font color="#FF0000">我想您可能知道现在市场并不那么好。如果您的房子有8年或以上，可能能卖个更好的价钱。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000400006.wav"></audio><audio controls><source src="sample/bert/06060000400006.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0503" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0503" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0503" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0503" value=0  />same
-            <input id="o5" type="radio" name="t1s0503" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0503" value=2  />better
-            <input id="o7" type="radio" name="t1s0503" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000400006.wav"></audio><audio controls><source src="sample/bert/06060000400006.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -356,14 +216,7 @@
             <font color="#FF0000">嗯，也不好说行情怎么会怎么变，但是您必须考虑以一个较低价格购买一个替代住房。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000400008.wav"></audio><audio controls><source src="sample/bert/06060000400008.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0504" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0504" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0504" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0504" value=0  />same
-            <input id="o5" type="radio" name="t1s0504" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0504" value=2  />better
-            <input id="o7" type="radio" name="t1s0504" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000400008.wav"></audio><audio controls><source src="sample/bert/06060000400008.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -372,89 +225,45 @@
             <font color="#FF0000">好的，我想过来先看看您的房子，然后我们先起草一份合同。</font>
         </td>
         <td>
-            <audio controls><source src="sample/phoneme/06060000400010.wav"></audio><audio controls><source src="sample/bert/06060000400010.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t1s0505" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s0505" value=-2 />worse
-            <input id="o3" type="radio" name="t1s0505" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s0505" value=0  />same
-            <input id="o5" type="radio" name="t1s0505" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s0505" value=2  />better
-            <input id="o7" type="radio" name="t1s0505" value=3  />much better
+            <audio controls><source src="sample/phoneme/06060000400010.wav"></audio><audio controls><source src="sample/bert/06060000400010.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
 </table>
 
-<h2>Listen Again M1(left) vs M2(right) </h2>
+<h2>Listen the complete conversation: M1(left) vs M2(right) </h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>Conversation1</th><th>和左边音频对比，您觉得右边音频如何？?</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             <audio controls><source src="sample/phoneme/00000.wav"></audio><audio controls><source src="sample/bert/00000.wav"></audio>
         </td>
-        <td>
-            <input id="o1" type="radio" name="t1s01" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s01" value=-2 />worse
-            <input id="o3" type="radio" name="t1s01" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s01" value=0  />same
-            <input id="o5" type="radio" name="t1s01" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s01" value=2  />better
-            <input id="o7" type="radio" name="t1s01" value=3  />much better
-        </td>
     </tr>
 </table>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>Conversation2</th><th>和左边音频对比，您觉得右边音频如何？?</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             <audio controls><source src="sample/phoneme/00001.wav"></audio><audio controls><source src="sample/bert/00001.wav"></audio>
         </td>
-        <td>
-            <input id="o1" type="radio" name="t1s02" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s02" value=-2 />worse
-            <input id="o3" type="radio" name="t1s02" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s02" value=0  />same
-            <input id="o5" type="radio" name="t1s02" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s02" value=2  />better
-            <input id="o7" type="radio" name="t1s02" value=3  />much better
-        </td>
     </tr>
 </table>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>Conversation3</th><th>和左边音频对比，您觉得右边音频如何？?</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             <audio controls><source src="sample/phoneme/00002.wav"></audio><audio controls><source src="sample/bert/00002.wav"></audio>
         </td>
-        <td>
-            <input id="o1" type="radio" name="t1s03" value=-3 />much worse
-            <input id="o2" type="radio" name="t1s03" value=-2 />worse
-            <input id="o3" type="radio" name="t1s03" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t1s03" value=0  />same
-            <input id="o5" type="radio" name="t1s03" value=1  />slightly better
-            <input id="o6" type="radio" name="t1s03" value=2  />better
-            <input id="o7" type="radio" name="t1s03" value=3  />much better
-        </td>
     </tr>
 </table>
 
-<h2>Part 2 M2(left) vs M3(right) </h2>
+<h2>Part 2: M2(left) vs M3(right) </h2>
 
-<h2>对话 1</h2>
+<h2>Dialog 1</h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>文本</th><th>音频</th></tr>
+    <tr><th>Transcript</th><th>Audio</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             <font color="#FF0000">您好，有什么可以帮您？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000100000.wav"></audio><audio controls><source src="sample/chat/06060000100000.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0201" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0201" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0201" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0201" value=0  />same
-            <input id="o5" type="radio" name="t2s0201" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0201" value=2  />better
-            <input id="o7" type="radio" name="t2s0201" value=3  />much better
+            <audio controls><source src="sample/bert/06060000100000.wav"></audio><audio controls><source src="sample/chat/06060000100000.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -463,14 +272,7 @@
             <font color="#FF0000">可以的。那么，您要去哪里旅行呢？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000100002.wav"></audio><audio controls><source src="sample/chat/06060000100002.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0202" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0202" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0202" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0202" value=0  />same
-            <input id="o5" type="radio" name="t2s0202" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0202" value=2  />better
-            <input id="o7" type="radio" name="t2s0202" value=3  />much better
+            <audio controls><source src="sample/bert/06060000100002.wav"></audio><audio controls><source src="sample/chat/06060000100002.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -479,14 +281,7 @@
             <font color="#FF0000">可以啊，嗯，您想去热带气候的地方，还是想去凉爽的地方？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000100004.wav"></audio><audio controls><source src="sample/chat/06060000100004.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0203" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0203" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0203" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0203" value=0  />same
-            <input id="o5" type="radio" name="t2s0203" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0203" value=2  />better
-            <input id="o7" type="radio" name="t2s0203" value=3  />much better
+            <audio controls><source src="sample/bert/06060000100004.wav"></audio><audio controls><source src="sample/chat/06060000100004.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -495,14 +290,7 @@
             <font color="#FF0000">好的，我给您一些小册子，您参考参考。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000100006.wav"></audio><audio controls><source src="sample/chat/06060000100006.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0204" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0204" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0204" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0204" value=0  />same
-            <input id="o5" type="radio" name="t2s0204" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0204" value=2  />better
-            <input id="o7" type="radio" name="t2s0204" value=3  />much better
+            <audio controls><source src="sample/bert/06060000100006.wav"></audio><audio controls><source src="sample/chat/06060000100006.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -511,14 +299,7 @@
             <font color="#FF0000">好的。另外，您这次旅行的预算多少？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000100008.wav"></audio><audio controls><source src="sample/chat/06060000100008.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0205" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0205" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0205" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0205" value=0  />same
-            <input id="o5" type="radio" name="t2s0205" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0205" value=2  />better
-            <input id="o7" type="radio" name="t2s0205" value=3  />much better
+            <audio controls><source src="sample/bert/06060000100008.wav"></audio><audio controls><source src="sample/chat/06060000100008.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -527,35 +308,21 @@
             <font color="#FF0000">好的。那您先选择目的地，缩小范围之后，我们将很乐意为您预订。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000100010.wav"></audio><audio controls><source src="sample/chat/06060000100010.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0206" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0206" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0206" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0206" value=0  />same
-            <input id="o5" type="radio" name="t2s0206" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0206" value=2  />better
-            <input id="o7" type="radio" name="t2s0206" value=3  />much better
+            <audio controls><source src="sample/bert/06060000100010.wav"></audio><audio controls><source src="sample/chat/06060000100010.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
 </table>
 
-<h2>对话 2</h2>
+<h2>Dialog 2</h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>文本</th><th>音频</th></tr>
+    <tr><th>Transcript</th><th>Audio</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             你好。我需要预订飞机票。<br>
             <font color="#FF0000">好的，我们可以立即预订您的行程。那，您要飞往哪个城市？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000200002.wav"></audio><audio controls><source src="sample/chat/06060000200002.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0301" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0301" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0301" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0301" value=0  />same
-            <input id="o5" type="radio" name="t2s0301" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0301" value=2  />better
-            <input id="o7" type="radio" name="t2s0301" value=3  />much better
+            <audio controls><source src="sample/bert/06060000200002.wav"></audio><audio controls><source src="sample/chat/06060000200002.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -564,14 +331,7 @@
             <font color="#FF0000">好。您希望预定几号的票？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000200004.wav"></audio><audio controls><source src="sample/chat/06060000200004.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0302" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0302" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0302" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0302" value=0  />same
-            <input id="o5" type="radio" name="t2s0302" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0302" value=2  />better
-            <input id="o7" type="radio" name="t2s0302" value=3  />much better
+            <audio controls><source src="sample/bert/06060000200004.wav"></audio><audio controls><source src="sample/chat/06060000200004.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -580,14 +340,7 @@
             <font color="#FF0000">稍等。嗯，好。您可以从洛杉矶国际机场或伯班克机场起飞，您选哪个？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000200006.wav"></audio><audio controls><source src="sample/chat/06060000200006.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0303" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0303" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0303" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0303" value=0  />same
-            <input id="o5" type="radio" name="t2s0303" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0303" value=2  />better
-            <input id="o7" type="radio" name="t2s0303" value=3  />much better
+            <audio controls><source src="sample/bert/06060000200006.wav"></audio><audio controls><source src="sample/chat/06060000200006.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -596,14 +349,7 @@
             <font color="#FF0000">好。您希望在一天中的哪个时间飞行？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000200008.wav"></audio><audio controls><source src="sample/chat/06060000200008.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0304" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0304" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0304" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0304" value=0  />same
-            <input id="o5" type="radio" name="t2s0304" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0304" value=2  />better
-            <input id="o7" type="radio" name="t2s0304" value=3  />much better
+            <audio controls><source src="sample/bert/06060000200008.wav"></audio><audio controls><source src="sample/chat/06060000200008.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -612,35 +358,21 @@
             <font color="#FF0000">好的，已经为您找到了廉价航班。我们已经把电子机票发到您的邮箱，请您查收。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000200010.wav"></audio><audio controls><source src="sample/chat/06060000200010.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0305" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0305" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0305" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0305" value=0  />same
-            <input id="o5" type="radio" name="t2s0305" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0305" value=2  />better
-            <input id="o7" type="radio" name="t2s0305" value=3  />much better
+            <audio controls><source src="sample/bert/06060000200010.wav"></audio><audio controls><source src="sample/chat/06060000200010.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
 </table>
 
-<h2>对话 3</h2>
+<h2>Dialog 3</h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>文本</th><th>音频</th></tr>
+    <tr><th>Transcript</th><th>Audio</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             嗨，你们这可以点酒水吗？<br>
             <font color="#FF0000">当然。本次航班，您可以选择酒吧饮品，咖啡，茶或软饮料。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000300002.wav"></audio><audio controls><source src="sample/chat/06060000300002.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0401" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0401" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0401" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0401" value=0  />same
-            <input id="o5" type="radio" name="t2s0401" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0401" value=2  />better
-            <input id="o7" type="radio" name="t2s0401" value=3  />much better
+            <audio controls><source src="sample/bert/06060000300002.wav"></audio><audio controls><source src="sample/chat/06060000300002.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -649,14 +381,7 @@
             <font color="#FF0000">我们的酒精饮料，每人五美元。其他的均为两美元，可免费续杯。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000300004.wav"></audio><audio controls><source src="sample/chat/06060000300004.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0402" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0402" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0402" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0402" value=0  />same
-            <input id="o5" type="radio" name="t2s0402" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0402" value=2  />better
-            <input id="o7" type="radio" name="t2s0402" value=3  />much better
+            <audio controls><source src="sample/bert/06060000300004.wav"></audio><audio controls><source src="sample/chat/06060000300004.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -665,14 +390,7 @@
             <font color="#FF0000">可以的。我们会先给您赠送一些小点心，然后您将在几个小时内享用晚餐。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000300006.wav"></audio><audio controls><source src="sample/chat/06060000300006.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0403" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0403" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0403" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0403" value=0  />same
-            <input id="o5" type="radio" name="t2s0403" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0403" value=2  />better
-            <input id="o7" type="radio" name="t2s0403" value=3  />much better
+            <audio controls><source src="sample/bert/06060000300006.wav"></audio><audio controls><source src="sample/chat/06060000300006.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -681,14 +399,7 @@
             <font color="#FF0000">我们供应鸡肉，鱼肉或牛肉盘。您可以随便选。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000300008.wav"></audio><audio controls><source src="sample/chat/06060000300008.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0404" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0404" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0404" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0404" value=0  />same
-            <input id="o5" type="radio" name="t2s0404" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0404" value=2  />better
-            <input id="o7" type="radio" name="t2s0404" value=3  />much better
+            <audio controls><source src="sample/bert/06060000300008.wav"></audio><audio controls><source src="sample/chat/06060000300008.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -697,35 +408,21 @@
             <font color="#FF0000">不好意思，先生，特殊饮食需求需要在起飞前提前预定的。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000300010.wav"></audio><audio controls><source src="sample/chat/06060000300010.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0405" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0405" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0405" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0405" value=0  />same
-            <input id="o5" type="radio" name="t2s0405" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0405" value=2  />better
-            <input id="o7" type="radio" name="t2s0405" value=3  />much better
+            <audio controls><source src="sample/bert/06060000300010.wav"></audio><audio controls><source src="sample/chat/06060000300010.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
 </table>
 
-<h2>对话 4</h2>
+<h2>Dialog 4</h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>文本</th><th>音频</th></tr>
+    <tr><th>Transcript</th><th>Audio</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             早上好。我想找一位房地产经纪人来帮我卖房子。<br>
             <font color="#FF0000">早上好。我很乐意为您提供帮助。那，您什么时候想卖掉您的房子？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000400002.wav"></audio><audio controls><source src="sample/chat/06060000400002.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0501" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0501" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0501" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0501" value=0  />same
-            <input id="o5" type="radio" name="t2s0501" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0501" value=2  />better
-            <input id="o7" type="radio" name="t2s0501" value=3  />much better
+            <audio controls><source src="sample/bert/06060000400002.wav"></audio><audio controls><source src="sample/chat/06060000400002.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -734,14 +431,7 @@
             <font color="#FF0000">好啊，您买房多久了呢？</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000400004.wav"></audio><audio controls><source src="sample/chat/06060000400004.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0502" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0502" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0502" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0502" value=0  />same
-            <input id="o5" type="radio" name="t2s0502" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0502" value=2  />better
-            <input id="o7" type="radio" name="t2s0502" value=3  />much better
+            <audio controls><source src="sample/bert/06060000400004.wav"></audio><audio controls><source src="sample/chat/06060000400004.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -750,14 +440,7 @@
             <font color="#FF0000">我想您可能知道现在市场并不那么好。如果您的房子有8年或以上，可能能卖个更好的价钱。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000400006.wav"></audio><audio controls><source src="sample/chat/06060000400006.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0503" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0503" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0503" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0503" value=0  />same
-            <input id="o5" type="radio" name="t2s0503" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0503" value=2  />better
-            <input id="o7" type="radio" name="t2s0503" value=3  />much better
+            <audio controls><source src="sample/bert/06060000400006.wav"></audio><audio controls><source src="sample/chat/06060000400006.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -766,14 +449,7 @@
             <font color="#FF0000">嗯，也不好说行情怎么会怎么变，但是您必须考虑以一个较低价格购买一个替代住房。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000400008.wav"></audio><audio controls><source src="sample/chat/06060000400008.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0504" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0504" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0504" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0504" value=0  />same
-            <input id="o5" type="radio" name="t2s0504" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0504" value=2  />better
-            <input id="o7" type="radio" name="t2s0504" value=3  />much better
+            <audio controls><source src="sample/bert/06060000400008.wav"></audio><audio controls><source src="sample/chat/06060000400008.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
     <tr>
@@ -782,74 +458,35 @@
             <font color="#FF0000">好的，我想过来先看看您的房子，然后我们先起草一份合同。</font>
         </td>
         <td>
-            <audio controls><source src="sample/bert/06060000400010.wav"></audio><audio controls><source src="sample/chat/06060000400010.wav"></audio><br><font color="#4169E1">和左边音频对比，您觉得右边音频如何？?</font><br>
-            <input id="o1" type="radio" name="t2s0505" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s0505" value=-2 />worse
-            <input id="o3" type="radio" name="t2s0505" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s0505" value=0  />same
-            <input id="o5" type="radio" name="t2s0505" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s0505" value=2  />better
-            <input id="o7" type="radio" name="t2s0505" value=3  />much better
+            <audio controls><source src="sample/bert/06060000400010.wav"></audio><audio controls><source src="sample/chat/06060000400010.wav"></audio><br><font color="#4169E1">
         </td>
     </tr>
 </table>
 
-<h2>Listen Again M2(left) vs M3(right) </h2>
+<h2>Listen the complete conversation: M2(left) vs M3(right) </h2>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>Conversation1</th><th>和左边音频对比，您觉得右边音频如何？?</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             <audio controls><source src="sample/bert/00000.wav"></audio><audio controls><source src="sample/chat/00000.wav"></audio>
         </td>
-        <td>
-            <input id="o1" type="radio" name="t2s01" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s01" value=-2 />worse
-            <input id="o3" type="radio" name="t2s01" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s01" value=0  />same
-            <input id="o5" type="radio" name="t2s01" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s01" value=2  />better
-            <input id="o7" type="radio" name="t2s01" value=3  />much better
-        </td>
     </tr>
 </table>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>Conversation2</th><th>和左边音频对比，您觉得右边音频如何？?</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             <audio controls><source src="sample/bert/00001.wav"></audio><audio controls><source src="sample/chat/00001.wav"></audio>
         </td>
-        <td>
-            <input id="o1" type="radio" name="t2s02" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s02" value=-2 />worse
-            <input id="o3" type="radio" name="t2s02" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s02" value=0  />same
-            <input id="o5" type="radio" name="t2s02" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s02" value=2  />better
-            <input id="o7" type="radio" name="t2s02" value=3  />much better
-        </td>
     </tr>
 </table>
 <table border="1px" style="table-layout:fixed; word-wrap:break-word;">
-    <tr><th>Conversation3</th><th>和左边音频对比，您觉得右边音频如何？?</th></tr>
     <tr>
         <td width="800px" style="word-wrap:break-word;">
             <audio controls><source src="sample/bert/00002.wav"></audio><audio controls><source src="sample/chat/00002.wav"></audio>
-        </td>
-        <td>
-            <input id="o1" type="radio" name="t2s03" value=-3 />much worse
-            <input id="o2" type="radio" name="t2s03" value=-2 />worse
-            <input id="o3" type="radio" name="t2s03" value=-1 />slightly worse
-            <input id="o4" type="radio" name="t2s03" value=0  />same
-            <input id="o5" type="radio" name="t2s03" value=1  />slightly better
-            <input id="o6" type="radio" name="t2s03" value=2  />better
-            <input id="o7" type="radio" name="t2s03" value=3  />much better
         </td>
     </tr>
 </table>
 
 <p></p>
-<input type="submit" value="Finish!" style="height: 50px; width: 800px; left: 250px; top: 250px; margin-left:500px;" />
-</form>
 
 </body>
 </html>
