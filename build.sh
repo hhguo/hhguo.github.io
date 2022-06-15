@@ -1,4 +1,4 @@
-./hugo
+hugo
 
 git add .
 git commit -am 'update'
