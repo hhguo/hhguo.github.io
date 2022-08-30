@@ -34,7 +34,7 @@ publication_short: INTERSPEECH
 abstract: End-to-end, autoregressive model-based TTS has shown significant performance improvements over the conventional ones. However, the autoregressive module training is affected by the “exposure bias”, or the mismatch between different distributions of real and predicted data. While real data is provided in training, in testing, predicted data is available only. By introducing both real and generated data sequences in training, we can alleviate the effects of the exposure bias. We propose to use Generative Adversarial Network (GAN) along with the idea of "Professor Forcing" in training. A discriminator in GAN is jointly trained to equalize the difference between real and the predicted data. In AB subjective listening test, the results show that the new approach is preferred over the standard transfer learning with a CMOS improvement of 0.1. Sentence level intelligibility tests also show significant improvement in a pathological test set. The GAN-trained new model is shown more stable than the baseline to produce better alignments for the Tacotron output.
 
 # Summary. An optional shortened abstract.
-summary: Conference paper accepted by INTERSPEECH 2020
+summary: Conference paper accepted by INTERSPEECH 2019
 
 tags: ['speech synthesis', 'end-to-end TTS synthesis', 'auto-regressive model', 'generative adversarial model', 'adversarial training']
 

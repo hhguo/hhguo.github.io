@@ -34,7 +34,7 @@ publication_short: INTERSPEECH
 abstract: "The end-to-end TTS, which can predict speech directly from a given sequence of graphemes or phonemes, has shown improved performance over the conventional TTS. However, its predicting capability is still limited by the acoustic/phonetic coverage of the training data, usually constrained by the training set size. To further improve the TTS quality in pronunciation, prosody and perceived naturalness, we propose to exploit the information embedded in a syntactically parse tree where the inter-phrase/word information of a sentence is organized in a multilevel tree structure. Specifically, two key features: phrase structure and relations between adjacent words are investigated. Experimental results in subjective listening, measured on three test sets, show that the proposed approach is effective to improve the pronunciation clarity, prosody and naturalness of the synthesized speech of the baseline system."
 
 # Summary. An optional shortened abstract.
-summary: Conference paper accepted by INTERSPEECH 2020
+summary: Conference paper accepted by INTERSPEECH 2019
 
 tags: ['end-to-end TTS', 'prosody', 'speech synthesis', 'syntactic parsing', 'Tacotron']
 
