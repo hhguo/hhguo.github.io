@@ -47,7 +47,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://www1.se.cuhk.edu.hk/~hccl/publications/pub/A%20Multi-Stage%20Multi-Codebook.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
