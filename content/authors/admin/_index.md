@@ -65,7 +65,7 @@ social:
 #   link: 'media/resume.pdf'
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "haohanguo@outlook.com"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -74,4 +74,4 @@ highlight_name: false
 #{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-Hello! I am Haohan, a PhD student @ CUHK, supervised by Prof. Helen Mei Ling MENG. Before it, I received my M.S. and B.S. degrees from Northwestern Polytechnical University, supervised by Prof. Lei Xie. Then, I worked as a researcher at Sogou Inc during 2020-2021. My current research topic is deep learning based speech synthesis. If you are interested in my works, welcome to email me.
+Hello! I am Haohan Guo (郭浩瀚), a PhD student @ CUHK, supervised by Prof. Helen Mei Ling MENG. Before it, I received my M.S. and B.S. degrees from Northwestern Polytechnical University, supervised by Prof. Lei Xie. Then, I worked as a researcher at Sogou Inc during 2020-2021. My current research topic is deep learning based speech synthesis. If you are interested in my works, welcome to contact me.

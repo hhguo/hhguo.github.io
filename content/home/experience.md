@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 60
 
-title: Experience
+title: Work Experience
 subtitle: lab, internship, full-time employee
 
 # Date format for experience
@@ -22,16 +22,6 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: PhD student
-    company: HCCL@CUHK
-    company_url: 'https://www.se.cuhk.edu.hk/laboratories/human-computer-communications-laboratory/'
-    company_logo: ''
-    location: Beijing, China
-    date_start: '2021-08-02'
-    date_end: ''
-    description: Supervised by Helen Meng.
-    order: 2
-
   - title: Researcher
     company: Sogou
     company_url: 'https://ai.sogou.com/'
@@ -59,15 +49,6 @@ experience:
     date_start: '2018-05-01'
     date_end: '2019-09-01'
     description: Supervised by Frank K. Soong and Lei He. We aim to improve the robustness and naturalness of end-to-end TTS. Two main works are published to INTERSPEECH 2019, [A New GAN-based End-to-End TTS Training Algorithm](./publication/2019_interspeech_gantts) and [Exploiting Syntactic Features in a Parsed Tree to Improve End-to-End TTS](./publication/2019_interspeech_parser). We also investigate the conversational TTS using the end-to-end approach. The work is published to SLT 2021, [Conversational End-to-End TTS for Voice Agents](./publication/2021_slt_convtts).
-
-  - title: Student
-    company: 'Audio, Speech and Language Processing Group at Northwestern Polytechnical University (ASLP @ NWPU)'
-    company_url: 'http://www.npu-aslp.org/'
-    company_logo: ''
-    location: Xi'an, Shannxi, China
-    date_start: '2016-06-01'
-    date_end: '2020-05-01'
-    description: Supervised by Lei Xie.
 
   - title: Research Intern
     company: 'Chumenwenwen'

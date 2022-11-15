@@ -18,7 +18,7 @@ lastmod: "2022-06-15T13:26:00Z"
 draft: false
 
 # Show this page in the Featured widget?
-featured: false
+featured: true
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
@@ -29,16 +29,13 @@ image:
   preview_only: false
 
 authors:
-- admin
-- 吳恩達
+- Haohan Guo
 
 tags:
-- Academic
-- 开源
+- INTERSPEECH
 
 categories:
-- Demo
-- 教程
+- Paper
 ---
 
 ## Overview
