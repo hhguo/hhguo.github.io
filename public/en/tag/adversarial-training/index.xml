@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adversarial Training | Academic</title>
+    <link>https://example.com/tag/adversarial-training/</link>
+      <atom:link href="https://example.com/tag/adversarial-training/index.xml" rel="self" type="application/rss+xml" />
+    <description>Adversarial Training</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu114e430bfe2fe4b75116576f69263d78_26138_512x512_fill_lanczos_center_3.png</url>
+      <title>Adversarial Training</title>
+      <link>https://example.com/tag/adversarial-training/</link>
+    </image>
+    
+    <item>
+      <title>A New GAN-based End-to-End TTS Training Algorithm</title>
+      <link>https://example.com/publication/2019_interspeech_gantts/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/2019_interspeech_gantts/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

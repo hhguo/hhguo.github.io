@@ -22,6 +22,24 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Applied Scientist Intern
+    company: Amazon
+    company_url: 'https://www.amazon.science/'
+    company_logo: 'org-amazon'
+    location: Cambridge, UK
+    date_start: '2023-06-01'
+    date_end: '2023-11-01'
+    description: Work as an applied scientist intern to develop large-scale TTS system based on large language models (LLM).
+
+  - title: Research Intern
+    company: Xiaohongshu
+    company_url: 'https://www.xiaohongshu.com'
+    company_logo: 'org-xiaohongshu'
+    location: Beijing, China
+    date_start: '2020-08-01'
+    date_end: '2022-05-01'
+    description: Work as a researcher intern to investigate the application of speech representations in TTS.
+
   - title: Researcher
     company: Sogou
     company_url: 'https://ai.sogou.com/'
@@ -30,7 +48,7 @@ experience:
     date_start: '2020-12-09'
     date_end: '2021-07-23'
     description: Work as a researcher on singing voice conversion. We aim to develop a commercial singing conversion system which can convert arbitrary singing voice to the target timbre. High sound quality and accurate melody expression are both required.
-    order: 1
+    # order: 1
         
   - title: Research Intern
     company: 'Tencent AI Lab'
