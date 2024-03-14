@@ -1,3 +1,4 @@
+rm -rf public
 hugo
 
 git add .
