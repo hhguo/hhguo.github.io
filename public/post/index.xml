@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Haohan Guo&#39;s Page</title>
+    <link>https://hhguo.github.io/post/</link>
+      <atom:link href="https://hhguo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Jun 2022 13:26:00 +0000</lastBuildDate>
+    <image>
+      <url>https://hhguo.github.io/media/icon_hu114e430bfe2fe4b75116576f69263d78_26138_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://hhguo.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>Two papers are accepted by INTERSPEECH 2022</title>
+      <link>https://hhguo.github.io/post/2022061501-is2022/</link>
+      <pubDate>Wed, 15 Jun 2022 13:26:00 +0000</pubDate>
+      <guid>https://hhguo.github.io/post/2022061501-is2022/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
