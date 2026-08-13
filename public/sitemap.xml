@@ -2,223 +2,327 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hhguo.github.io/talk/example-talk/</loc>
+    <loc>http://localhost:1313/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/event/</loc>
+    <loc>http://localhost:1313/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication-type/1/</loc>
+    <loc>http://localhost:1313/publication-type/1/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/cofi-speech/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/multi-scale/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/neural-codec-language-model/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication_types/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/2025_icassp_cofispeech/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/speech-synthesis/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/zero-shot-tts/</loc>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication-type/3/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/fireredtts/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/2025_arxiv_fireredtts1s/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/flow-matching/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/foundation-tts/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/language-model/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/streaming-tts/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/2024_slt_pqvae/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/index-collapse/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/pq-vae/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/socodec/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/2024_slt_socodec/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/speech-codec/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/speech-tokenizer/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/tts/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/vq-vae/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/2024_arxiv_fireredtts/</loc>
+    <lastmod>2024-09-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/voice-cloning/</loc>
+    <lastmod>2024-09-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication-type/2/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/qs-tts/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/2024_taslp_qstts/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/self-supervised-learning/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/semi-supervised-tts/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/tag/end-to-end-tts/</loc>
     <lastmod>2023-05-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/end-to-end-tts/</loc>
+    <loc>http://localhost:1313/tag/msmc-tts/</loc>
     <lastmod>2023-05-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/msmc-tts/</loc>
+    <loc>http://localhost:1313/publication/2023_taslp_msmc/</loc>
     <lastmod>2023-05-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2023_taslp_msmc/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hhguo.github.io/publication_types/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hhguo.github.io/publication/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hhguo.github.io/tag/speech-synthesis/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hhguo.github.io/tags/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hhguo.github.io/tag/tts/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hhguo.github.io/tag/vq-vae/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hhguo.github.io/tag/low-resource-tts/</loc>
+    <loc>http://localhost:1313/tag/low-resource-tts/</loc>
     <lastmod>2022-11-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2022_arxiv_lrtts/</loc>
+    <loc>http://localhost:1313/publication/2022_arxiv_lrtts/</loc>
     <lastmod>2022-11-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/vq-gan/</loc>
+    <loc>http://localhost:1313/tag/vq-gan/</loc>
     <lastmod>2022-11-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2022_interspeech_msmc/</loc>
+    <loc>http://localhost:1313/publication/2022_interspeech_msmc/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2022-06-15T13:26:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/interspeech/</loc>
+    <loc>http://localhost:1313/tag/interspeech/</loc>
     <lastmod>2022-06-15T13:26:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/category/paper/</loc>
+    <loc>http://localhost:1313/category/paper/</loc>
     <lastmod>2022-06-15T13:26:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2022-06-15T13:26:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/post/2022061501-is2022/</loc>
+    <loc>http://localhost:1313/post/2022061501-is2022/</loc>
     <lastmod>2022-06-15T13:26:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2022_interspeech_msd/</loc>
+    <loc>http://localhost:1313/publication/2022_interspeech_msd/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/end-to-end-model/</loc>
+    <loc>http://localhost:1313/tag/end-to-end-model/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/gan/</loc>
+    <loc>http://localhost:1313/tag/gan/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/mel-spectrogram/</loc>
+    <loc>http://localhost:1313/tag/mel-spectrogram/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/non-autoregressive-tts/</loc>
+    <loc>http://localhost:1313/tag/non-autoregressive-tts/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/harmonic-signal/</loc>
+    <loc>http://localhost:1313/tag/harmonic-signal/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2022_icassp_harsvc/</loc>
+    <loc>http://localhost:1313/publication/2022_icassp_harsvc/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/neural-vocoder/</loc>
+    <loc>http://localhost:1313/tag/neural-vocoder/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/sine-excitation/</loc>
+    <loc>http://localhost:1313/tag/sine-excitation/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/singing-voice-conversion/</loc>
+    <loc>http://localhost:1313/tag/singing-voice-conversion/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2021_slt_convtts/</loc>
+    <loc>http://localhost:1313/publication/2021_slt_convtts/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/conversational-tts/</loc>
+    <loc>http://localhost:1313/tag/conversational-tts/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/end-to-end/</loc>
+    <loc>http://localhost:1313/tag/end-to-end/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/speech-corpus/</loc>
+    <loc>http://localhost:1313/tag/speech-corpus/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/text-to-speech/</loc>
+    <loc>http://localhost:1313/tag/text-to-speech/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/voice-agent/</loc>
+    <loc>http://localhost:1313/tag/voice-agent/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/generative-adversarial-model/</loc>
+    <loc>http://localhost:1313/tag/generative-adversarial-model/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/melgan/</loc>
+    <loc>http://localhost:1313/tag/melgan/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2020_arxiv_easvc/</loc>
+    <loc>http://localhost:1313/publication/2020_arxiv_easvc/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2019_interspeech_gantts/</loc>
+    <loc>http://localhost:1313/publication/2019_interspeech_gantts/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/adversarial-training/</loc>
+    <loc>http://localhost:1313/tag/adversarial-training/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/auto-regressive-model/</loc>
+    <loc>http://localhost:1313/tag/auto-regressive-model/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/end-to-end-tts-synthesis/</loc>
+    <loc>http://localhost:1313/tag/end-to-end-tts-synthesis/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/publication/2019_interspeech_parser/</loc>
+    <loc>http://localhost:1313/publication/2019_interspeech_parser/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/prosody/</loc>
+    <loc>http://localhost:1313/tag/prosody/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/syntactic-parsing/</loc>
+    <loc>http://localhost:1313/tag/syntactic-parsing/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/tacotron/</loc>
+    <loc>http://localhost:1313/tag/tacotron/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/slides/</loc>
+    <loc>http://localhost:1313/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/slides/example/</loc>
+    <loc>http://localhost:1313/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/tag/deep-learning/</loc>
+    <loc>http://localhost:1313/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/project/example/</loc>
+    <loc>http://localhost:1313/project/example/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/project/</loc>
+    <loc>http://localhost:1313/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hhguo.github.io/admin/</loc>
+    <loc>http://localhost:1313/admin/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

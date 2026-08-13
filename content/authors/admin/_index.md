@@ -43,7 +43,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:hguo@se.cuhk.edu.hk'#'/#contact'
+  link: 'mailto:haohanguo.mail@gmail.com'#'/#contact'
 # - icon: twitter
 #   icon_pack: fab
 #   link: https://twitter.com/hhguo9527
@@ -65,7 +65,7 @@ social:
 #   link: 'media/resume.pdf'
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "haohanguo@outlook.com"
+email: "haohanguo.mail@gmail.com"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false

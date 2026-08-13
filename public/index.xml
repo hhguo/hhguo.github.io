@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haohan Guo&#39;s Page</title>
-    <link>https://hhguo.github.io/</link>
-      <atom:link href="https://hhguo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/</link>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <description>Haohan Guo&#39;s Page</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hhguo.github.io/media/icon_hu114e430bfe2fe4b75116576f69263d78_26138_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu114e430bfe2fe4b75116576f69263d78_26138_512x512_fill_lanczos_center_3.png</url>
       <title>Haohan Guo&#39;s Page</title>
-      <link>https://hhguo.github.io/</link>
+      <link>http://localhost:1313/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://hhguo.github.io/talk/example-talk/</link>
+      <link>http://localhost:1313/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/talk/example-talk/</guid>
+      <guid>http://localhost:1313/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -33,10 +33,88 @@
     </item>
     
     <item>
+      <title>Speaking from Coarse to Fine: Improving Neural Codec Language Model via Multi-Scale Speech Coding and Generation</title>
+      <link>http://localhost:1313/publication/2025_icassp_cofispeech/</link>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2025_icassp_cofispeech/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FireRedTTS-1S: An Upgraded Streamable Foundation Text-to-Speech System</title>
+      <link>http://localhost:1313/publication/2025_arxiv_fireredtts1s/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2025_arxiv_fireredtts1s/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Addressing Index Collapse of Large-Codebook Speech Tokenizer with Dual-Decoding Product-Quantized Variational Auto-Encoder</title>
+      <link>http://localhost:1313/publication/2024_slt_pqvae/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024_slt_pqvae/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SoCodec: A Semantic-Ordered Multi-Stream Speech Codec for Efficient Language Model Based Text-to-Speech Synthesis</title>
+      <link>http://localhost:1313/publication/2024_slt_socodec/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024_slt_socodec/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FireRedTTS: A Foundation Text-To-Speech Framework for Industry-Level Generative Speech Applications</title>
+      <link>http://localhost:1313/publication/2024_arxiv_fireredtts/</link>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024_arxiv_fireredtts/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>QS-TTS: Towards Semi-Supervised Text-to-Speech Synthesis via Vector-Quantized Self-Supervised Speech Representation Learning</title>
+      <link>http://localhost:1313/publication/2024_taslp_qstts/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024_taslp_qstts/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>MSMC-TTS: Multi-Stage Multi-Codebook VQ-VAE based Neural TTS</title>
-      <link>https://hhguo.github.io/publication/2023_taslp_msmc/</link>
+      <link>http://localhost:1313/publication/2023_taslp_msmc/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2023_taslp_msmc/</guid>
+      <guid>http://localhost:1313/publication/2023_taslp_msmc/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -55,9 +133,9 @@
     
     <item>
       <title>Towards High-Quality Neural TTS for Low-Resource Languages by Learning Compact Speech Representations</title>
-      <link>https://hhguo.github.io/publication/2022_arxiv_lrtts/</link>
+      <link>http://localhost:1313/publication/2022_arxiv_lrtts/</link>
       <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2022_arxiv_lrtts/</guid>
+      <guid>http://localhost:1313/publication/2022_arxiv_lrtts/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -76,9 +154,9 @@
     
     <item>
       <title>A Multi-Stage Multi-Codebook VQ-VAE Approach to High-Performance Neural TTS</title>
-      <link>https://hhguo.github.io/publication/2022_interspeech_msmc/</link>
+      <link>http://localhost:1313/publication/2022_interspeech_msmc/</link>
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2022_interspeech_msmc/</guid>
+      <guid>http://localhost:1313/publication/2022_interspeech_msmc/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -97,18 +175,18 @@
     
     <item>
       <title>Two papers are accepted by INTERSPEECH 2022</title>
-      <link>https://hhguo.github.io/post/2022061501-is2022/</link>
+      <link>http://localhost:1313/post/2022061501-is2022/</link>
       <pubDate>Wed, 15 Jun 2022 13:26:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/post/2022061501-is2022/</guid>
+      <guid>http://localhost:1313/post/2022061501-is2022/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 </description>
     </item>
     
     <item>
       <title>A Multi-Scale Time-Frequency Spectrogram Discriminator for GAN-based Non-Autoregressive TTS</title>
-      <link>https://hhguo.github.io/publication/2022_interspeech_msd/</link>
+      <link>http://localhost:1313/publication/2022_interspeech_msd/</link>
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2022_interspeech_msd/</guid>
+      <guid>http://localhost:1313/publication/2022_interspeech_msd/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -127,9 +205,9 @@
     
     <item>
       <title>Improving Adversarial Waveform Generation based Singing Voice Conversion with Harmonic Signals</title>
-      <link>https://hhguo.github.io/publication/2022_icassp_harsvc/</link>
+      <link>http://localhost:1313/publication/2022_icassp_harsvc/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2022_icassp_harsvc/</guid>
+      <guid>http://localhost:1313/publication/2022_icassp_harsvc/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -148,9 +226,9 @@
     
     <item>
       <title>Conversational End-to-End TTS for Voice Agents</title>
-      <link>https://hhguo.github.io/publication/2021_slt_convtts/</link>
+      <link>http://localhost:1313/publication/2021_slt_convtts/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2021_slt_convtts/</guid>
+      <guid>http://localhost:1313/publication/2021_slt_convtts/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -169,9 +247,9 @@
     
     <item>
       <title>Phonetic Posteriorgrams based Many-to-Many Singing Voice Conversion via Adversarial Training</title>
-      <link>https://hhguo.github.io/publication/2020_arxiv_easvc/</link>
+      <link>http://localhost:1313/publication/2020_arxiv_easvc/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2020_arxiv_easvc/</guid>
+      <guid>http://localhost:1313/publication/2020_arxiv_easvc/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -190,9 +268,9 @@
     
     <item>
       <title>A New GAN-based End-to-End TTS Training Algorithm</title>
-      <link>https://hhguo.github.io/publication/2019_interspeech_gantts/</link>
+      <link>http://localhost:1313/publication/2019_interspeech_gantts/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2019_interspeech_gantts/</guid>
+      <guid>http://localhost:1313/publication/2019_interspeech_gantts/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -211,9 +289,9 @@
     
     <item>
       <title>Exploiting Syntactic Features in a Parsed Tree to Improve End-to-End TTS</title>
-      <link>https://hhguo.github.io/publication/2019_interspeech_parser/</link>
+      <link>http://localhost:1313/publication/2019_interspeech_parser/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/publication/2019_interspeech_parser/</guid>
+      <guid>http://localhost:1313/publication/2019_interspeech_parser/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -232,9 +310,9 @@
     
     <item>
       <title>Slides</title>
-      <link>https://hhguo.github.io/slides/example/</link>
+      <link>http://localhost:1313/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/slides/example/</guid>
+      <guid>http://localhost:1313/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -356,9 +434,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Example Project</title>
-      <link>https://hhguo.github.io/project/example/</link>
+      <link>http://localhost:1313/project/example/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/project/example/</guid>
+      <guid>http://localhost:1313/project/example/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -369,9 +447,9 @@ $$&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://hhguo.github.io/admin/</link>
+      <link>http://localhost:1313/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hhguo.github.io/admin/</guid>
+      <guid>http://localhost:1313/admin/</guid>
       <description></description>
     </item>
     
