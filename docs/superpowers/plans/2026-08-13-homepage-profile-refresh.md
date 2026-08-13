@@ -31,14 +31,14 @@ Expected: the old Biography, current-student timeline title, open-ended Ph.D. da
 
 In `content/authors/admin/_index.md`, set the organization to ByteDance Seed with `https://seed.bytedance.com/en/`, change the degree to `Ph.D. in Speech AI`, and replace the body with the exact user-provided Biography.
 
-In `content/home/education.md`, set `date_format: 2006`, the first title to `Ph.D. in Speech AI`, and its `date_end` to a date in 2026 so only the approved year is rendered.
+In `content/home/education.md`, set `date_format: '2006'` (quoted so YAML preserves the required string type), the first title to `Ph.D. in Speech AI`, and its `date_end` to a date in 2026 so only the approved year is rendered.
 
 - [ ] **Step 3: Verify source requirements**
 
 Run:
 
 ```bash
-rg -n 'ByteDance Seed|Research Scientist|2021 - 2026|date_format: 2006|date_end:.*2026' \
+rg -n "ByteDance Seed|Research Scientist|2021 - 2026|date_format: '2006'|date_end:.*2026" \
   content/authors/admin/_index.md content/home/education.md
 ! rg -n 'PhD student @ CUHK|Ph\.D\. Student' \
   content/authors/admin/_index.md content/home/education.md
