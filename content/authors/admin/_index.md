@@ -1,12 +1,12 @@
 ---
 # Display name
-title: Haohan Guo
+title: Haohan Guo, PhD
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: PhD Student @ CUHK
+role: Research Scientist @ ByteDance Seed
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -28,7 +28,7 @@ education:
   courses:
   - course: PhD in Computer Science
     institution: The Chinese University of Hong Kong
-    year: 2021-
+    year: 2021 - 2026
   - course: MSc in Computer Science
     institution: Northwestern Polytechnical University
     year: 2017-2020
