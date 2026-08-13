@@ -14,7 +14,7 @@ subtitle:
 
 # Date format for experience
 #   Refer to https://wowchemy.com/docs/customization/#date-format
-date_format: Jan 2006
+date_format: 2006
 
 # Experiences.
 #   Add/remove as many `experience` items below as you like.
@@ -22,13 +22,13 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Ph.D. Student
+  - title: Ph.D. in Speech AI
     company: The Chinese University of Hong Kong (CUHK)
     company_url: 'https://www.se.cuhk.edu.hk/laboratories/human-computer-communications-laboratory/'
     company_logo: 'org-cuhk'
     location: Hong Kong SAR, China
     date_start: '2021-08-01'
-    date_end: ''
+    date_end: '2026-01-01'
     description: Supervised by Prof. Helen Meng.
     # order: 2
 

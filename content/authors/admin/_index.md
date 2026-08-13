@@ -10,8 +10,8 @@ role: Research Scientist @ ByteDance Seed
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: The Chinese University of Hong Kong
-  url: https://www.cuhk.edu.hk/
+- name: ByteDance Seed
+  url: https://seed.bytedance.com/en/
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
@@ -26,7 +26,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Computer Science
+  - course: Ph.D. in Speech AI
     institution: The Chinese University of Hong Kong
     year: 2021 - 2026
   - course: MSc in Computer Science
@@ -74,4 +74,4 @@ highlight_name: false
 #{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-Hello! I am Haohan Guo (郭浩瀚), a PhD student @ CUHK, supervised by Prof. Helen Mei Ling MENG. Before it, I received my M.S. and B.S. degrees from Northwestern Polytechnical University, supervised by Prof. Lei Xie. Then, I worked as a researcher at Sogou Inc during 2020-2021. My current research topic is deep learning based speech synthesis. If you are interested in my works, welcome to contact me.
+Hello! I am Haohan Guo (郭浩瀚), a Research Scientist at ByteDance Seed. I received my Ph.D. in Speech AI from The Chinese University of Hong Kong, advised by Prof. Helen Meng, and my M.S. and B.S. degrees from Northwestern Polytechnical University, advised by Prof. Lei Xie. My research focuses on speech and audio generation. Please feel free to contact me if you are interested in my work.
